@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es-CU">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Adenium Garden</title>
+    <meta name="author" content="Aliadex" />
+    <meta name="description" content="Tienda de adenios y suculentas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/menuLateral.css" />
+    <link rel="stylesheet" href="/styles/burgerMenu.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerCont">
+        <div class="headerLogo">
+          <img class="headerLogoImg" src="/assets/images/logoAliadex.png" alt="Logo de Adenium Garden" />
+          <button
+            class="menuToggle"
+            id="menuToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="sidebar"
+            aria-label="Abrir menu"
+          >
+            <span class="bar"></span>
+          </button>
+          <h1 class="headerTitulo">Adenium Garden</h1>
+          <p class="headerText">Bienvenidos al Jardín</p>
+        </div>
+        <button class="headerBtn" type="button">Comenzar</button>
+      </div>
+    </header>
+
+    <div id="overlay" class="overlay"></div>
+
+    <aside id="sidebar" class="sidebar">
+      <div class="asidecont">
+        <header class="asideHeader"><h2 class="asidetitulo">Menu</h2></header>
+        <ul class="mainMenu">
+          <li><a href="/html/informacion.html">Sobre Nosotros</a></li>
+          <li><a href="/html/proyectos.html">Proyectos</a></li>
+          <li><a href="/html/contactos.html">Contactos</a></li>
+          <li><a href="/html/legal.html">Legal</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <script type="module" src="/scripts/menuLateral.js"></script>
+    <script type="module" src="/scripts/index.js"></script>
+  </body>
+</html>

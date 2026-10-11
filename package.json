@@ -11,5 +11,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@lordicon/element": "^3.0.2"
   }
 }

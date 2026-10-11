@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+}
+.headerCont {
+  display: flex;
+  width: 100%;
+  background-color: rgb(138, 200, 113);
+  border-top: 4px solid rgba(2, 31, 7, 0.7);
+  border-left: 4px solid rgba(2, 26, 6, 0.7);
+  border-bottom: 4px solid rgba(2, 37, 8, 0.7);
+  border-right: 4px solid rgb(0, 16, 3, 0.7);
+}
