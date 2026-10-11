@@ -1,0 +1,36 @@
+# Dependencias de Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variables de entorno (¡NUNCA subas esto!)
+.env
+.env.local
+.env.*.local
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Builds / dist (si luego usas un bundler)
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Logs
+logs/
+*.log
+
+# Coverage / testing
+coverage/
