@@ -1,12 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Spirax&display=swap");
+
+/* ---------- Header ---------- */
 .header {
-  display: flex;
+  background-color: rgba(5, 15, 9, 0.95);
+  background-image: linear-gradient(to bottom, #0b1a10 0%, #091d11 100%);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  padding: 0.75rem 1.5rem;
+  min-height: 80px;
 }
-.headerCont {
+
+/* ---------- Zona izquierda (logo + slogan) ---------- */
+.headerIzq {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.headerLogoImg {
+  height: 128px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.headerText {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #dae8dc;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
   width: 100%;
-  background-color: rgb(138, 200, 113);
-  border-top: 4px solid rgba(2, 31, 7, 0.7);
-  border-left: 4px solid rgba(2, 26, 6, 0.7);
-  border-bottom: 4px solid rgba(2, 37, 8, 0.7);
-  border-right: 4px solid rgb(0, 16, 3, 0.7);
+  mask-image: linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%);
+}
+
+/* ---------- Zona central (título + nav) ---------- */
+.headerCentro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.slogan {
+  display: inline-block;
+  padding-right: 3rem;
+  font-family: "Spirax", serif;
+  font-style: italic;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-weight: 200;
+  letter-spacing: 0.02em;
+  color: #d8f3dc;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.headerTitulo {
+  font-family: "Spirax", serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #d8f3dc;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Zona derecha (botones) ---------- */
+.headerDerecha {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  align-self: start;
+  margin-top: 2rem;
+  width: 100%;
+}
+/* Botón "Entrar" */
+.headerBtn {
+  padding: 0.5rem 1.25rem;
+  font-family: "Spirax";
+  font-size: 1rem;
+  font-weight: 1000;
+  letter-spacing: 0.04em;
+  color: #051808;
+  border: 1px solid rgba(5, 113, 21, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.25s ease;
+}
+.headerBtn:hover {
+  background-color: rgba(20, 53, 31, 0.95);
+  border-color: rgba(216, 243, 220, 0.5);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.headerBtn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }

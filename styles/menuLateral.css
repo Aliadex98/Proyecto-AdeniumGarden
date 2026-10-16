@@ -7,15 +7,11 @@
   height: 100%;
   width: 250px;
   border-radius: 15px;
-  background: #2ca906e8;
-  box-shadow: #0a3a1b;
+  background: #133209e8;
+  box-shadow: #031208;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
   z-index: 50;
-  border-top: 4px solid rgb(1, 13, 3);
-  border-left: 4px solid rgb(1, 13, 3);
-  border-right: 4px solid rgb(1, 13, 3);
-  border-bottom: 4px solid rgb(1, 13, 3);
 }
 .asideHeader {
   width: 100%;
@@ -23,7 +19,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
 .asideTitulo {
   position: center;

@@ -1,44 +1,67 @@
-.menuToggle {
+/* Botón hamburguesa */
+.menuLateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 10px;
-}
-/*Span central*/
-.menuToggle .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #021701;
-  position: relative;
-  transition:
-    transform 0.5s ease,
-    background 0.5s ease;
-}
-/* Lineas Arriba/Abajo */
-.menuToggle .bar::before,
-.menuToggle .bar::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #021701;
-  left: 0;
-  transition: transform 0.5s ease;
-}
-.menuToggle .bar::before {
-  transform: translateY(8px);
-}
-.menuToggle .bar::after {
-  transform: translateY(-8);
 }
 
-.menuToggle[aria-expanded="true"] .bar {
+/* Barra central */
+.bar {
+  width: 24px;
+  height: 2px;
+  background-color: #d8f3dc;
+  border-radius: 2px;
+  position: relative;
+  transition: background-color 0.25s ease;
+}
+
+/* Barras superior e inferior */
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #d8f3dc;
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease;
+}
+
+.bar::before {
+  top: -7px;
+}
+
+.bar::after {
+  top: 7px;
+}
+
+/* Estado abierto*/
+.menuLateral[aria-expanded="true"] .bar {
   background-color: transparent;
 }
-.menuToggle[aria-expanded="true"] .bar::before {
+
+.menuLateral[aria-expanded="true"] .bar::before {
+  top: 0;
   transform: rotate(45deg);
 }
-.menuToggle[aria-expanded="true"] .bar::after {
+
+.menuLateral[aria-expanded="true"] .bar::after {
+  top: 0;
   transform: rotate(-45deg);
+}
+
+/* Accesibilidad */
+.menuLateral:focus-visible {
+  outline: 2px solid #a3c9a8;
+  outline-offset: 2px;
 }

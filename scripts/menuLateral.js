@@ -1,4 +1,4 @@
-const menuBtn = document.getElementById('menuToggle');
+const menuBtn = document.getElementById('menuLateral');
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('overlay');
 
